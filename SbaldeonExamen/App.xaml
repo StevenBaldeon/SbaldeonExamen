@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SbaldeonExamen.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Style x:Key="lblEstilo" TargetType="Label">
+                <Setter Property="TextColor" Value="#003466"/>
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+
+            </Style>
+            <Style x:Key="lblEntry" TargetType="Entry">
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="FontSize" Value="Body"/>
+                
+            </Style>
+        </ResourceDictionary>
+
+        <ResourceDictionary>
+            <Style x:Key="stackLayoutStyle" TargetType="StackLayout">
+                <Setter Property="Orientation"     Value = "Vertical"   />
+                <Setter Property="WidthRequest"    Value = "150"        />
+                <Setter Property="BackgroundColor" Value="Aqua"    />
+                <Setter Property="Padding"         Value = "20,20,20,20"/>
+               
+
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

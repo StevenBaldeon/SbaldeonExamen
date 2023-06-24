@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SbaldeonExamen.Resumen">
+   <ContentPage.Resources>
+    <ResourceDictionary>
+        <Style TargetType="Entry">
+                <Setter Property="TextColor" Value="black"/>
+            <Setter Property="BackgroundColor" Value="Beige"/>
+        </Style>
+        <Style TargetType="Label">
+                <Setter Property="TextColor" Value="#003466"/>
+            <Setter Property="FontSize" Value="Medium"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+            </Style>
+    </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        
+        <StackLayout>
+            <Label x:Name="lblUsuario" TextColor="Red" FontSize="16" HorizontalTextAlignment="Center"/>
+            <Label Text="RESUMEN" HorizontalTextAlignment="Center" FontSize="25"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Text="NOMBRE"  Grid.Row="0" Grid.Column="0"/>
+                <Label Text="APELLIDO"  Grid.Row="1" Grid.Column="0"/>
+                <Label Text="EDAD"  Grid.Row="2" Grid.Column="0"/>
+                <Label Text="FECHA"  Grid.Row="3" Grid.Column="0"/>
+                <Label Text="CIUDAD"  Grid.Row="4" Grid.Column="0"/>
+                <Label Text="PAIS"  Grid.Row="5" Grid.Column="0"/>
+                <Label Text="MONTO INICIAL"  Grid.Row="6" Grid.Column="0"/>
+                <Label Text="PAGO MENSUAL"  Grid.Row="7" Grid.Column="0"/>
+                <Label Text="PAGO TOTAL"  Grid.Row="8" Grid.Column="0"/>
+                <Entry x:Name="txtNombre" Grid.Row="0" Grid.Column="1" IsReadOnly="True"/>
+                <Entry x:Name="txtApellido" Grid.Row="1" Grid.Column="1" IsReadOnly="True"/>
+                <Entry x:Name="txtEdad" Grid.Row="2" Grid.Column="1" IsReadOnly="True"/>
+                <Entry x:Name="txtFecha" Grid.Row="3" Grid.Column="1" IsReadOnly="True"/>
+                <Entry x:Name="txtCiudad" Grid.Row="4" Grid.Column="1" IsReadOnly="True"/>
+                <Entry x:Name="txtPais" Grid.Row="5" Grid.Column="1" IsReadOnly="True"/>
+                <Entry x:Name="txtMI" Grid.Row="6" Grid.Column="1" IsReadOnly="True"/>
+                <Entry x:Name="txtPM" Grid.Row="7" Grid.Column="1" IsReadOnly="True"/>
+                <Entry x:Name="txtPT" Grid.Row="8" Grid.Column="1" IsReadOnly="True"/>
+            </Grid>
+            <Button x:Name="btnSalir" Text="Salir" Clicked="btnSalir_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

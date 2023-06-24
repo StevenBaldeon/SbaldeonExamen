@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SbaldeonExamen.Login">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Examen: Parcial 1" FontSize="18" TextColor="Red" HorizontalOptions="Center"/>
+            <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Usuario"  Grid.Row="0" Grid.Column="0" Style="{StaticResource lblEstilo}"/>
+                <Label Text="Contrasena"  Grid.Row="1" Grid.Column="0" Style="{StaticResource lblEstilo}"/>
+                <Button x:Name="btnInicio" Text="Iniciar Sesion"  Clicked="btnInicio_Clicked" Grid.Row="2" Grid.Column="0"/>
+                <Entry x:Name="txtUsuario" Placeholder="Ingrese el usuario" Grid.Row="0" Grid.Column="1" Style="{StaticResource lblEntry}"/>
+                <Entry x:Name="txtContrasena" Placeholder="Ingrese la contrasena" Grid.Row="1" Grid.Column="1" Style="{StaticResource lblEntry}" IsPassword="True"/>
+                <Button x:Name="btnCancelar" Text="Cancelar" Clicked="btnCancelar_Clicked" Grid.Row="2" Grid.Column="1"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
